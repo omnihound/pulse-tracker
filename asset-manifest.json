@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pulse-tracker/static/css/main.34de6062.chunk.css",
+    "main.js": "/pulse-tracker/static/js/main.cbe002b9.chunk.js",
+    "main.js.map": "/pulse-tracker/static/js/main.cbe002b9.chunk.js.map",
+    "runtime-main.js": "/pulse-tracker/static/js/runtime-main.0a502dc4.js",
+    "runtime-main.js.map": "/pulse-tracker/static/js/runtime-main.0a502dc4.js.map",
+    "static/js/2.798e8748.chunk.js": "/pulse-tracker/static/js/2.798e8748.chunk.js",
+    "static/js/2.798e8748.chunk.js.map": "/pulse-tracker/static/js/2.798e8748.chunk.js.map",
+    "index.html": "/pulse-tracker/index.html",
+    "precache-manifest.0bb665f5e0f9a5b13ff24cac391703ee.js": "/pulse-tracker/precache-manifest.0bb665f5e0f9a5b13ff24cac391703ee.js",
+    "service-worker.js": "/pulse-tracker/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/pulse-tracker/static/css/main.34de6062.chunk.css.map",
+    "static/js/2.798e8748.chunk.js.LICENSE.txt": "/pulse-tracker/static/js/2.798e8748.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a502dc4.js",
+    "static/js/2.798e8748.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.cbe002b9.chunk.js"
+  ]
+}
