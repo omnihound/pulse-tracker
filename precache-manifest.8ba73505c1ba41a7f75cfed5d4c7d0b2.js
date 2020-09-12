@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52d472152530acab4118716122261885",
+    "revision": "15ff3deb65270dffa42e9ff01e9ab3e5",
     "url": "/pulse-tracker/index.html"
   },
   {
-    "revision": "09f88a93bb63e13bbec0",
+    "revision": "2357790e959e6b85bdce",
     "url": "/pulse-tracker/static/css/main.34de6062.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pulse-tracker/static/js/2.798e8748.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09f88a93bb63e13bbec0",
-    "url": "/pulse-tracker/static/js/main.fe6e549c.chunk.js"
+    "revision": "2357790e959e6b85bdce",
+    "url": "/pulse-tracker/static/js/main.42106a5d.chunk.js"
   },
   {
     "revision": "da4e0ecdf812dad3259c",
