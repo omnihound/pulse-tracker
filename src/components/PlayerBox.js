@@ -20,10 +20,12 @@ import {
   useDisclosure,
 } from "@chakra-ui/core";
 import axios from "axios";
+import useWindowSize from "../hooks/useWindowSize";
 
 export const PlayerBox = ({ player, id, ...rest }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [rotateAngle, setRotateAngle] = useState(0);
+  const { height } = useWindowSize();
 
   const loadOptions = (inputValue) => {
     const request = axios.get(
@@ -84,14 +86,14 @@ export const PlayerBox = ({ player, id, ...rest }) => {
             height="1.5em"
             paddingRight="0.15rem"
             paddingLeft="0.15rem"
-            marginTop="1.5rem"
+            marginTop="1.25rem"
             minWidth="2rem"
           >
             -1
           </Button>
         </Box>
         <Box w="100%">
-          <Heading textAlign="center" size="1.6rem">
+          <Heading textAlign="center" size="1.6rem" marginTop="0.5em" marginBottom="0.5em">
             {player.life}
           </Heading>
         </Box>
@@ -109,7 +111,7 @@ export const PlayerBox = ({ player, id, ...rest }) => {
             height="1.5em"
             paddingRight="0.15rem"
             paddingLeft="0.15rem"
-            marginTop="1.5rem"
+            marginTop="1.25rem"
             minWidth="2rem"
           >
             +1
@@ -120,7 +122,7 @@ export const PlayerBox = ({ player, id, ...rest }) => {
         <Box textAlign="center">
           <Image
             rounded="full"
-            size={"4rem"}
+            size={`${height * 0.10}px`}
             src={
               player.commander
                 ? player.commander.image_uris.art_crop
@@ -131,8 +133,8 @@ export const PlayerBox = ({ player, id, ...rest }) => {
         </Box>
       }
 
-      <Heading size="md" textAlign="center">
-        {player.name}
+      <Heading size="md" textAlign="center" marginTop="0.5em" marginBottom="0.5em">
+        {player.commander ? player.commander.name : player.name}
       </Heading>
       <Grid templateColumns="repeat(3, 1fr)" marginTop="1rem">
         <Box w="100%" textAlign="center">
@@ -171,10 +173,10 @@ export const PlayerBox = ({ player, id, ...rest }) => {
             <Text>Commander Damage</Text>
             {otherPlayers.map((_player, index) => (
               <Flex key={`${player.name}-${index}-${_player.name}`}>
-                <Text mt={"1.5em"} mr={"1.5em"}>
+                <Text mt={"1.25em"} mr={"1.5em"}>
                   {_player.name}
                 </Text>
-                <Text mt={"1.5em"} mr={"1.5em"}>
+                <Text mt={"1.25em"} mr={"1.5em"}>
                   {(player.commanderDamage &&
                     player.commanderDamage[_player.id]) ||
                     0}
@@ -193,7 +195,7 @@ export const PlayerBox = ({ player, id, ...rest }) => {
                   height="1.5em"
                   paddingRight="0.15rem"
                   paddingLeft="0.15rem"
-                  marginTop="1.5rem"
+                  marginTop="1.25rem"
                   minWidth="2rem"
                 >
                   -1
