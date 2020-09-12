@@ -120,7 +120,7 @@ export const PlayerBox = ({ player, id, ...rest }) => {
         <Box textAlign="center">
           <Image
             rounded="full"
-            size="10rem"
+            size={["2.5rem","10rem"]}
             src={
               player.commander
                 ? player.commander.image_uris.art_crop
